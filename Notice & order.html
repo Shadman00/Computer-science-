@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notices and Orders - COMPUTER SCIENCE DEPARTMENT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 3px solid #0779e4;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content {
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.notice-board {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.notice-item {
+    background: #0779e4;
+    color: #fff;
+    padding: 20px;
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.notice-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    animation: modalopen 0.5s;
+}
+
+@keyframes modalopen {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+}
+
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav-list {
+    list-style-type: none;
+    
+    display: flex;
+    
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #1556d7;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>CS Department</h1>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="college.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item"><a href="Notice & order.html">Notices</a></li>
+            <li class="nav-item"><a href="Syllabus.html">Syllabus</a></li>
+            <li class="nav-item"><a href="resources.html">Resources</a></li>
+            <li class="nav-item"><a href="login.html" target="_self"><span class="material-symbols-outlined">
+                login
+                </span></li></a>
+        </ul>
+    </nav>
+    
+    <div class="container main-content">
+        <h2>Notices and Orders</h2>
+        <div class="notice-board">
+            <div class="notice-item" onclick="openModal('notice1')">
+                <h3>Notice 1: Semester Exam Schedule</h3>
+                <p>Click to view details</p>
+            </div>
+            <div class="notice-item" onclick="openModal('notice2')">
+                <h3>Notice 2: College Reopening</h3>
+                <p>Click to view details</p>
+            </div>
+            <div class="notice-item" onclick="openModal('notice3')">
+                <h3>Notice 2: Results and Examination</h3>
+                <p>Click to view details</p>
+            </div>
+            <div class="notice-item" onclick="openModal('notice3')">
+                <h3>Order 1: Library Book Return Deadline</h3>
+                <p>Click to view details</p>
+            </div>
+            <div class="notice-item" onclick="openModal('notice4')">
+                <h3>Order 2: Hostel Allocation</h3>
+                <p>Click to view details</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="notice1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notice1')">&times;</span>
+            <h2>Semester Exam Schedule</h2>
+            <p>The semester exams will be held from 20th July to 30th July. The detailed schedule will be posted on the notice board and the college website.</p>
+        </div>
+    </div>
+
+    <div id="notice2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notice2')">&times;</span>
+            <h2>College Reopening</h2>
+            <p>The college will reopen on 1st August. All students are required to attend the orientation session on 2nd August in the main auditorium.</p>
+        </div>
+    </div>
+
+    <div id="notice3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notice3')">&times;</span>
+            <h2>Library Book Return Deadline</h2>
+            <p>All library books must be returned by 15th July to avoid any late fees. Please ensure that you clear all dues before the deadline.</p>
+        </div>
+    </div>
+
+    <div id="notice4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('notice4')">&times;</span>
+            <h2>Hostel Allocation</h2>
+            <p>Hostel rooms will be allocated on a first-come, first-served basis. Students are requested to submit their applications by 10th July.</p>
+        </div>
+    </div>
+
+    <script src="scripts.js">function openModal(id) {
+        document.getElementById(id).style.display = "block";
+    }
+    
+    function closeModal(id) {
+        document.getElementById(id).style.display = "none";
+    }
+    
+    window.onclick = function(event) {
+        const modals = document.getElementsByClassName("modal");
+        for (let i = 0; i < modals.length; i++) {
+            if (event.target == modals[i]) {
+                modals[i].style.display = "none";
+            }
+        }
+    }
+    </script>
+</body>
+</html>

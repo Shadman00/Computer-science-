@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Department Login</title>
+   
+    <style>
+        /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.login-section {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-top: 1rem;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Science Department Login</h1>
+    </header>
+    <main>
+        <section class="login-section">
+            <h2>Teacher Login</h2>
+            <form id="teacherLoginForm">
+                <label for="teacherUsername">Username:</label>
+                <input type="text" id="teacherUsername" name="teacherUsername" required>
+
+                <label for="teacherPassword">Password:</label>
+                <input type="password" id="teacherPassword" name="teacherPassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section class="login-section">
+            <h2>Student Login</h2>
+            <form id="studentLoginForm">
+                <label for="studentUsername">Username:</label>
+                <input type="text" id="studentUsername" name="studentUsername" required>
+
+                <label for="studentPassword">Password:</label>
+                <input type="password" id="studentPassword" name="studentPassword" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Computer Science Department. All rights reserved.</p>
+    </footer>
+</body>
+</html>

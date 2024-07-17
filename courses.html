@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Courses</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0779e4 3px solid;
+        }
+        header h1 {
+            text-align: center;
+            margin: 0;
+            padding: 0 20px;
+        }
+        .main-content {
+            padding: 20px;
+            background: #fff;
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .course {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .course-item {
+            background: #0779e4;
+            color: #fff;
+            padding: 20px;
+            margin: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .course-item h3 {
+            margin-top: 0;
+        }
+        .course-item:hover {
+            transform: translateY(-5px);
+        }
+  
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav-list {
+    list-style-type: none;
+    
+    display: flex;
+    
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #1556d7;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Computer Science Courses</h1>
+    </header>
+
+    <nav>
+        <ul class="nav-list">
+            <li class="nav-item"><a href="college.html">Home</a></li>
+            <li class="nav-item"><a href="about.html">About</a></li>
+            <li class="nav-item"><a href="courses.html">Courses</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item"><a href="Notice & order.html">Notices</a></li>
+            <li class="nav-item"><a href="Syllabus.html">Syllabus</a></li>
+            <li class="nav-item"><a href="resources.html">Resources</a></li>
+            <li class="nav-item"><a href="login.html" target="_self"><span class="material-symbols-outlined">
+                login
+                </span></li></a>
+        </ul>
+    </nav>
+    
+    <div class="container main-content">
+        <h2>Available Courses</h2>
+        <div class="course">
+            <div class="course-item">
+                <h3>Introduction to Programming</h3>
+                <p>Learn the basics of programming using languages like Python and Java.</p>
+            </div>
+            <div class="course-item">
+                <h3>Data Structures and Algorithms</h3>
+                <p>Understand the fundamental data structures and algorithms to solve complex problems efficiently.</p>
+            </div>
+            <div class="course-item">
+                <h3>Database Management Systems</h3>
+                <p>Gain knowledge on database design, implementation, and management using SQL.</p>
+            </div>
+            <div class="course-item">
+                <h3>Software Engineering</h3>
+                <p>Learn the principles of software development, project management, and best practices in the industry.</p>
+            </div>
+            <div class="course-item">
+                <h3>Artificial Intelligence</h3>
+                <p>Explore the concepts of AI, machine learning, and neural networks.</p>
+            </div>
+            <div class="course-item">
+                <h3>Cybersecurity</h3>
+                <p>Understand the techniques and practices to protect systems and networks from cyber threats.</p>
+            </div>
+            <div class="course-item">
+                <h3>Web Development</h3>
+                <p>Learn to create dynamic and responsive websites using HTML, CSS, and JavaScript.</p>
+            </div>
+            <div class="course-item">
+                <h3>Mobile App Development</h3>
+                <p>Develop mobile applications for Android and iOS platforms using modern frameworks.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+h1{ background-color:#ffffff;
+    position:relative;
+    text-align: center;
+   top: 10px;
+
+}
+nav {
+    background-color: #ffffff;
+    overflow: hidden;
+    height: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav-list {
+    list-style-type: none;
+    
+    display: flex;
+    
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-item a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    background-color: #1556d7;
+    color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+#home img{
+    background-image: url('images/AI-2023.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100vh;
+   
+            position: relative;
+
+}
+
+#home h2 {
+    position: absolute;
+    top:17%;
+    color: #ffffff;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 200px;
+    margin-left: 30px;
+    
+}
+#about 
+{   
+  
+   background-repeat: no-repeat;
+   height:00%;
+  
+   margin: 8%;
+   background-color: rgb(0, 0, 0);
+
+}
+#about img{
+position: relative;
+box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+border-radius: 20px;
+left: 62%;
+top:70px;
+
+
+}
+#about h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 170px;
+    margin-left: 15px;
+    color: #1556d7;
+    position: absolute;
+    top:120%;
+
+}
+#about p{
+    font-family: Arial, sans-serif;
+   word-spacing: 3px;
+    font-size: 15px;
+    padding-top: 30px;
+    margin-left: 18px;
+    color: #ffffff;
+    position: absolute;
+   
+   
+}
+#about button a{
+    border:none;
+    background-color:#007bff;
+    padding: 20px;
+    position: relative;
+    left:50px;
+  bottom: 20px;
+    color:#f4f4f4;
+    text-decoration: none;
+   
+}
+#about button{
+    border:none;
+    background-color:#ffffff;
+    padding: 20px;
+    position: relative;
+    left:50px;
+     bottom: 10px;
+    color:#000000;
+    text-decoration: none;
+}
+
+
+#services
+{   
+  
+   background-repeat: no-repeat;
+   height:100%;
+   margin: 8%;
+   background-color: black;
+
+}
+
+#services img{
+    border-radius:20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+    top : 160px;
+    margin-left: 66px;
+}
+#services h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 170px;
+    margin-left: 30px;
+    color: #1556d7;
+    left:50%;
+    position: absolute;
+    top:210%;
+
+}
+#contact 
+{   
+  
+   background-repeat: no-repeat;
+   height:100%;
+   position: relative;
+   top:100px;
+   margin: 8%;
+   padding: 30px;
+   
+   background-color: black;
+
+}
+#contact img {
+
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position: relative;
+    top:140px;
+    left:57%;
+}
+#contact h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 150px;
+  
+    color: #1556d7;
+    position: absolute;
+    top: -2%;
+   
+}
+
+
+#more {
+    position: relative;
+    top:200px;
+   
+    background-color: #1556d7;
+    height: 320px;
+}
+
+
+.aboutss li{
+list-style: none;
+padding-right: 20px;
+}
+.aboutss h{
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+    border-bottom: 2pxx solid #000000 ;
+}
+.socsial ul{
+    display: flex;
+    list-style: none;
+    
+}
+.socsial li {
+    padding-left: 15px;
+    position: relative;
+    right:20px;
+    
+}
+.socsial i{
+    color: #ffffff;
+    font-size: 32px;
+    position: relative;
+   
+    
+}
+.socsial i:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px ;
+}
+.con{
+    display:flex;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    align-items: center;
+}
+
+
+
+.link {
+    display: flex;
+    background-color: #f4f4f4;
+
+    color: #000000;
+    align-items: center;
+    position: relative;
+    top:15px;
+}
+.link:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px ;
+}
+.abouts h {
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    bottom: 10px;
+}
+.aboutss a{
+    text-decoration: none;
+}
+.abouts a{
+    text-decoration: none;
+}
+.aboutss a:hover {
+    color: #5b5151;
+}
+.abouts a:hover {
+    color: #5b5151;
+}
+.abouts {
+    padding:20px 30px;
+}
+.abouts h{
+    border-bottom:2px solid #000000;
+}
+.aboutss h{
+    border-bottom:2px solid #000000;
+}
+.abouts1 h{
+    border-bottom:2px solid #000000;
+}
+.abouts li {
+    list-style-type: none;
+    color: #007bff;
+}
+.address p a{
+    color: #f4f4f4;
+}
+.address p a {
+    text-decoration: none;
+}
+
+#copy { 
+    bottom:15px;
+    text-align: center;
+    position: relative;
+   
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+   
+}
+.email:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px ;
+}
+
+.email form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.email #i {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.email input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+}
+.foot {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
+
+
